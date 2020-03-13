@@ -1,0 +1,81 @@
+.main {
+  height: 100%; 
+  margin: 0; 
+  padding: 15px;
+}
+.actual {
+  display:flex; 
+  padding-left:25px;
+}
+
+.chartTitle {
+  font-weight: bold;
+  color: #8b8b8b;
+  float: left;
+  font-size: 18px;
+}
+.chartHeader {
+  padding-top: 15px;
+}
+.projectedDot {
+  background-color: #2196f3;
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+.actualDot {
+  background-color: #673ab7;
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+.chartItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.priceTag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 25%;
+}
+.price {
+  font-size: 20px;
+  font-weight: bolder;
+  padding-right: 15px;
+  color: #787877;
+}
+.priceGross {
+  color: #00e676;
+  font-size: 14px;
+}
+.priceGross img,
+.pricedown img {
+  width: 12px;
+}
+.pricedown {
+  color: #ef8f8f;
+  font-size: 14px;
+}
+@media only screen and (max-width: 780px) {
+  .chartContainer {
+    display: block;
+  }
+  .chartBlock {
+    width: 100%;
+  }
+  .chartBlock canvas {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 780px) {
+  .chartContainer {
+    display: flex;
+  }
+}

@@ -1,0 +1,44 @@
+
+<div class="main">
+<div class="chartHeader" >
+  <span class="chartTitle">Today's Snapshot</span>
+  <div class="chartItems">
+    <div style="display:flex">
+      <span class="projectedDot"></span> <span>Projected</span>
+    </div>
+    <div class="actual">
+      <span class="actualDot"></span> <span>Actual</span>
+    </div>
+  </div>
+</div>
+<div class="chartContainer" style="height: 50%;float:left; width: 100%;">
+  <div class="chartBlock" style="height: 100%; width: 25%;">
+    <div echarts [options]="options" [loading]="isLoading" theme="macarons" class="demo-chart"></div>
+    <div class="priceTag">
+      <span class="price">$11,045</span>
+      <span class="priceGross">+20% <img src="assets/scalableVectorGraphics/up-arrow.svg"/></span>
+    </div>
+  </div>
+  <div class="chartBlock" style="height: 100%; width: 25%;">
+    <div echarts [options]="options2" [loading]="isLoading" theme="macarons" class="demo-chart"></div>
+    <div class="priceTag">
+      <span class="price">5</span>
+      <span class="pricedown">-10% <img src="assets/scalableVectorGraphics/down-arrow.svg"/></span>
+    </div>
+  </div>
+  <div class="chartBlock" style="height: 100%; width: 25%;">
+    <div echarts [options]="options3" [loading]="isLoading" theme="macarons" class="demo-chart"></div>
+    <div class="priceTag">
+      <span class="price">3 hrs</span>
+      <span class="priceGross">+20% <img src="assets/scalableVectorGraphics/up-arrow.svg"/></span>
+    </div>
+  </div>
+  <div class="chartBlock" style="height: 100%; width: 25%;">
+    <div echarts [options]="options" [loading]="isLoading" theme="macarons" class="demo-chart"></div>
+    <div class="priceTag">
+      <span class="price">$3,220</span>
+      <span class="pricedown">-10% <img src="assets/scalableVectorGraphics/down-arrow.svg"/></span>
+    </div>
+  </div>
+</div>
+</div>
